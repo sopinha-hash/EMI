@@ -472,3 +472,9 @@ a { text-decoration: none; color: inherit; }
   height: 80%;         /* altura da linha */
   background-color: white; /* cor da linha */
 }
+
+.traj {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
