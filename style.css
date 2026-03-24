@@ -25,7 +25,7 @@ html, body {
 
 body {
   font-family: Arial, Helvetica, sans-serif;
-  background: var(--bg);
+  background: linear-gradient(180deg, #04102d, #051439);
   color: var(--text);
   line-height: 1.6;
   min-height: 100vh;
@@ -160,7 +160,10 @@ a { text-decoration: none; color: inherit; }
 
 /* SEÇÕES GERAIS */
 .section { padding: 110px 24px; }
-.dark-section { background: linear-gradient(180deg, #04102d, #051439); }
+.dark-section {
+  background: linear-gradient(180deg, #04102d, #051439);
+  min-height: 100vh;
+}
 .soft-section { background: linear-gradient(180deg, #131924, #1a2230); }
 .final-section { background: radial-gradient(circle at top, #162033, #0b0d12 60%); }
 
