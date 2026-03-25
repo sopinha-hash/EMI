@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3º EMI • 2026</title>
+<style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background-color: #0a1018; /* Fundo escuro */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+      color: white;
+    }
+
+    .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 80%; /* Defina a largura total do conteúdo */
+    }
+
+    /* Estilo da mensagem central */
+    .message {
+      font-size: 24px;
+      font-weight: bold;
+      text-transform: uppercase;
+      max-width: 300px; /* Limita a largura da mensagem */
+      padding: 20px;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    /* Container das imagens */
+    .images {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    /* Estilo do cartão (imagem) */
+    .card {
+      width: 150px;
+      height: 150px;
+      background: #a4d69e; /* Cor de fundo dos cartões */
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: transform 0.3s ease-in-out;
+    }
+
+    /* Efeito ao passar o mouse sobre o cartão */
+    .card:hover {
+      transform: scale(1.1);
+    }
+
+    /* Imagem do cartão */
+    .card img {
+      max-width: 100%;
+      height: auto;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <!-- Imagens à esquerda -->
+    <div class="images">
+      <div class="card">
+        <img src="https://via.placeholder.com/150/8ecae6/fff?text=Imagem+1" alt="Imagem 1">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150/8ecae6/fff?text=Imagem+2" alt="Imagem 2">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150/8ecae6/fff?text=Imagem+3" alt="Imagem 3">
+      </div>
+    </div>
+
+    <!-- Texto no meio -->
+    <div class="message">
+      AGORA É OFICIAL! <br>
+      Obrigado por fazer parte da nossa história.
+    </div>
+
+    <!-- Imagens à direita -->
+    <div class="images">
+      <div class="card">
+        <img src="https://via.placeholder.com/150/8ecae6/fff?text=Imagem+4" alt="Imagem 4">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150/8ecae6/fff?text=Imagem+5" alt="Imagem 5">
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/150/8ecae6/fff?text=Imagem+6" alt="Imagem 6">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
