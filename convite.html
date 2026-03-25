@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>3º EMI • 2026</title>
+  <style>
+    /* Reset básico */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body, html {
+      height: 100%;
+      font-family: 'Arial', sans-serif;
+      background: #001d3d; /* tom escuro parecido com seu topo */
+      color: white;
+    }
+
+    /* Seção principal */
+    .hero {
+      position: relative;
+      width: 100%;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 0 20px;
+    }
+
+    /* Imagem de fundo com blur e escurecida */
+    .hero-bg {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: translate(-50%, -50%);
+      filter: brightness(0.3);
+      z-index: 1;
+    }
+
+    /* Camada de overlay escura (opcional para melhor contraste) */
+    .hero-overlay {
+      position: absolute;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0,0,0,0.5);
+      z-index: 2;
+    }
+
+    /* Container do conteúdo */
+    .content {
+      position: relative;
+      z-index: 3;
+      max-width: 600px;
+      color: white;
+      font-size: 40px;
+    }
+
+    /* Título principal */
+    .content h1 {
+      font-family: 'Georgia', serif;
+      font-weight: 900;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    /* Texto comum */
+    .content p {
+      font-weight: 600;
+      font-size: 1.1rem;
+      line-height: 1.5;
+      margin-bottom: 1rem;
+    }
+
+    /* Texto destacado */
+    .content p strong {
+      font-weight: 900;
+      font-size: 1.2rem;
+    }
+
+    /* Pergunta em destaque */
+    .content .question {
+      font-weight: 900;
+      font-size: 1.3rem;
+      margin: 1.5rem 0 1rem;
+    }
+
+    /* Opções */
+    .options {
+      margin-bottom: 2rem;
+      font-weight: 600;
+      font-size: 1rem;
+      letter-spacing: 0.04em;
+    }
+
+    .options span {
+      margin: 0 10px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    /* Botão */
+    button {
+      background-color: transparent;
+      border: 2px solid white;
+      color: white;
+      padding: 0.6rem 1.6rem;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      border-radius: 30px;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    button:hover {
+      background-color: white;
+      color: #001d3d;
+    }
+
+    /* Responsividade */
+    @media (max-width: 480px) {
+      .content h1 {
+        font-size: 2rem;
+      }
+      .content p, .options {
+        font-size: 1rem;
+      }
+    }
+
+.topbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 150px;
+  background-color: #001d3d; /* Azul escuro */
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Georgia', serif;
+  font-weight: 900;
+  font-size: 1.8rem;
+  z-index: 10;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.5);
+}
+  </style>
+</head>
+<body>
+  <section id="home" class="hero">
+    <div class="hero-overlay"></div>
+    <img src="https://lh3.googleusercontent.com/d/1k_a3KgCWAMTvqLh6JvVhFQ6RT9JKNtHy" 
+    alt="Foto da turma" class="hero-bg"/>
+
+
+<header class="topbar">
+  <h1>Um Convite Especial!</h1>
+</header>
+
+    <div class="content" style="font-family:'Times New Roman', Times, serif;">
+      <p><strong  style="font-size: 45px;">Professor Luann</strong></p>
+      <h6>Você fez parte da nossa trajetória.</h6>
+      <h6>Esteve presente nos momentos importantes,<br> nos ensinou, nos guiou,
+        deu bombomzinho e principalmente,<br> marcou a nossa turma.</h6>
+      <h6>Por isso, temos um convite...</h6>
+
+      <p class="question">
+        VOCÊ ACEITA SER O NOSSO PADRINHO?
+      </p>
+
+      <p class="options">
+        ( ) SIM
+        <span>( ) CLARO</span>
+        <span>( ) COM CERTEZA</span>
+      </p>
+
+    </div>
+  </section>
+</body>
+</html>
