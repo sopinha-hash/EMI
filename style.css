@@ -139,7 +139,6 @@ a { text-decoration: none; color: inherit; }
 
 .btn-primary {
   background: transparent;
-  color: rgb(206, 189, 0);
   border: 1px solid rgba(255,255,255,0.4);
   backdrop-filter: blur(6px);
   justify-content: center;
@@ -161,7 +160,7 @@ a { text-decoration: none; color: inherit; }
 /* SEÇÕES GERAIS */
 .section { padding: 110px 24px; }
 .dark-section {
-  background: linear-gradient(180deg, #04102d, #051439);
+  background: linear-gradient(180deg, #0a1018, #0a1018);
   min-height: 100vh;
 }
 .soft-section { background: linear-gradient(180deg, #131924, #1a2230); }
