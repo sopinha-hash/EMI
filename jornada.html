@@ -1,61 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-BR">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3º EMI • 2026</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+</head>
 <style>
-/* COLE SEU CSS AQUI OU USE ESTE */
-.galeria-dupla {
+.container-galeria {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 20px;
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 20px;
+  grid-template-columns: 300px 1fr 300px; /* ESQUERDA | TEXTO | DIREITA */
+  gap: 40px;
+  align-items: start;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 80px 20px;
 }
 
-.coluna {
+.photos-column2 {
   display: flex;
   flex-direction: column;
   gap: 15px;
+  justify-content: flex-start;
 }
 
-.foto {
+.foto-galeria {
   width: 100%;
-  height: 250px;
+  height: 340px !important;
   object-fit: cover;
   border-radius: 12px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
   transition: transform 0.3s;
 }
 
-.foto:hover {
-  transform: scale(1.05);
+.foto-galeria:hover {
+  transform: translateY(-5px);
 }
 
-/* Mobile */
-@media (max-width: 768px) {
-  .galeria-dupla {
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  max-width: 600px;
+}
+
+.text-column * {
+  color: white !important;
+  opacity: 1 !important;
+}
+
+/* MOBILE */
+@media (max-width: 992px) {
+  .container-galeria {
     grid-template-columns: 1fr;
+    gap: 30px;
+    text-align: center;
+  }
+  
+  .photos-column1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 200px;
+  }
+  
+  .foto-galeria {
+    flex: 1 1 280px;
+    max-width: 280px;
+    height: 340px !important;
   }
 }
 </style>
-</head>
 <body>
+<!-- TEXTO CENTRAL - CORRIGIDO -->
+<section id="virada" class="section dark-section">
+  <div class="container-galeria">
+    
+    <!-- ❌ ESQUERDA: EXATAMENTE 3 FOTOS -->
+    <div class="photos-column1 esquerda">
+      <img src="https://lh3.googleusercontent.com/d/13m9nXV-TJHFzbwZga_6VchbManuDkjti" 
+      class="img-fluid foto-galeria mb-2" alt="Arquivo 2"> > 
+      <img src="https://lh3.googleusercontent.com/d/1g_NYQS1qVaqOmB6Fdx53aleNd3nXw_ub" 
+      class="img-fluid foto-galeria mb-2">
+    </div>
 
-<div class="galeria-dupla">
-  <!-- ESQUERDA: 3 fotos -->
-  <div class="coluna">
-    <img src="https://via.placeholder.com/400x250/FF6B6B/FFFFFF?text=1" class="foto" alt="Foto 1">
-    <img src="https://via.placeholder.com/400x250/4ECDC4/FFFFFF?text=2" class="foto" alt="Foto 2">
-    <img src="https://via.placeholder.com/400x250/45B7D1/FFFFFF?text=3" class="foto" alt="Foto 3">
+    <!-- ✅ TEXTO CENTRAL -->
+    <div class="text-center px-4 text-column">
+      <h2 class="section-title">Durante nossa Jornada</h2>
+      <p class="big-text">Ao longo dessa trajetória, não caminhamos sozinhos.</p>
+      <p class="big-text">Entre aulas, desafios e conquistas, algumas pessoas fizeram parte de tudo isso.</p>
+      <p class="big-text">Algumas ensinaram. Outras inspiraram. E algumas marcaram de verdade.</p>
+      <p class="big-text">Algumas pessoas fizeram parte dessa história. Algumas marcaram. Outras transformaram.</p>
+      <h2 class="section-title" style="font-size: 40px;">
+        E entre todas essas pessoa especiais, existe alguém que se destacou...
+      </h2>
+    </div>
+
+    <!-- ✅ DIREITA: EXATAMENTE 3 FOTOS -->
+    <div class="photos-column2 direita">
+      <img src="https://lh3.googleusercontent.com/d/13m9nXV-TJHFzbwZga_6VchbManuDkjti"
+      class="img-fluid foto-galeria mb-2">
+      <img src="https://lh3.googleusercontent.com/d/1g_NYQS1qVaqOmB6Fdx53aleNd3nXw_ub" 
+      class="img-fluid foto-galeria mb-2"> alt="Arquivo 2"> 
+    </div>
   </div>
-  
-  <!-- DIREITA: 3 fotos -->
-  <div class="coluna">
-    <img src="https://via.placeholder.com/400x250/96CEB4/FFFFFF?text=4" class="foto" alt="Foto 4">
-    <img src="https://via.placeholder.com/400x250/FECA57/FFFFFF?text=5" class="foto" alt="Foto 5">
-    <img src="https://via.placeholder.com/400x250/FF9FF3/FFFFFF?text=6" class="foto" alt="Foto 6">
-  </div>
+<div class="btn-center">
+  <a href="jornada.html" class="btn-primary">Próximo</a>
 </div>
-
+</section>
 </body>
 </html>
