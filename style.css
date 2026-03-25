@@ -209,11 +209,11 @@ a { text-decoration: none; color: inherit; }
   margin: 0;
 }
 
-/* ALUNOS */
-.students-grid {
+.f {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 22px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
+  padding: 20px;
 }
 
 .student-card {
@@ -289,6 +289,8 @@ a { text-decoration: none; color: inherit; }
   font-size: 28px;
   margin-bottom: 22px;
   color: #eef3ff;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
 }
 
 .convite-box {
@@ -377,7 +379,7 @@ a { text-decoration: none; color: inherit; }
 
 .galeria-fotos {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(6, 1fr);
   gap: 0;
   width: 100%;
 }
@@ -480,4 +482,82 @@ a { text-decoration: none; color: inherit; }
   width: 200px;
   height: 200px;
   object-fit: cover;
+}
+
+
+/* GALERIA 3+3 COLUNAS */
+.container-galeria {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr; /* esquerda | texto | direita */
+  gap: 40px;
+  align-items: center;
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 60px 20px;
+  min-height: 100vh;
+}
+
+.photos-column {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+}
+
+.photos-column.right {
+  /* Mantém seu estilo original da direita */
+}
+
+.text-column {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.foto-galeria {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+  transition: all 0.4s ease;
+}
+
+.foto-galeria:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+/* RESPONSIVO */
+@media (max-width: 992px) {
+  .container-galeria {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    text-align: center;
+  }
+  
+  .photos-column {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .foto-galeria {
+    flex: 1 1 300px;
+    max-width: 300px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 768px) {
+  .foto-galeria {
+    height: 200px;
+  }
+  
+  .section-title {
+    font-size: 32px !important;
+  }
 }
