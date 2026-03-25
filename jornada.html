@@ -1,23 +1,61 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html>
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>3º EMI • 2026</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+<style>
+/* COLE SEU CSS AQUI OU USE ESTE */
+.galeria-dupla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  max-width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.coluna {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.foto {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transition: transform 0.3s;
+}
+
+.foto:hover {
+  transform: scale(1.05);
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .galeria-dupla {
+    grid-template-columns: 1fr;
+  }
+}
+</style>
 </head>
-<section id="virada" class="section soft-section">
-    <div class="container narrow reveal">
-      <h2 class="section-title">A virada</h2>
-      <p class="big-text">
-        Durante essa jornada, não caminhamos sozinhos.
-      </p>
-      <p class="big-text">
-        Algumas pessoas fizeram parte dessa história.<br>
-        Algumas marcaram.<br>
-        Outras transformaram.
-      </p>
-    </div>
-  </section>
+<body>
+
+<div class="galeria-dupla">
+  <!-- ESQUERDA: 3 fotos -->
+  <div class="coluna">
+    <img src="https://via.placeholder.com/400x250/FF6B6B/FFFFFF?text=1" class="foto" alt="Foto 1">
+    <img src="https://via.placeholder.com/400x250/4ECDC4/FFFFFF?text=2" class="foto" alt="Foto 2">
+    <img src="https://via.placeholder.com/400x250/45B7D1/FFFFFF?text=3" class="foto" alt="Foto 3">
+  </div>
+  
+  <!-- DIREITA: 3 fotos -->
+  <div class="coluna">
+    <img src="https://via.placeholder.com/400x250/96CEB4/FFFFFF?text=4" class="foto" alt="Foto 4">
+    <img src="https://via.placeholder.com/400x250/FECA57/FFFFFF?text=5" class="foto" alt="Foto 5">
+    <img src="https://via.placeholder.com/400x250/FF9FF3/FFFFFF?text=6" class="foto" alt="Foto 6">
+  </div>
+</div>
+
+</body>
+</html>
