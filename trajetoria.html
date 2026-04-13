@@ -87,14 +87,35 @@
       font-size: 1.5rem;
     }
 
-    .foto {
-      height: 200px;
-    }
+.foto {
+  width: 100%;
+  height: auto;
+  display: block;
+}
 
     .frase {
       font-size: 0.95rem;
     }
   }
+
+  @media (max-width: 768px) {
+  .traj {
+    display: block;
+    width: 100%;
+  }
+
+  .foto {
+    width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+  }
+
+  .frase {
+    font-size: 1rem;
+    margin-bottom: 20px;
+    padding: 0 5px;
+  }
+}
 </style>
 </head>
 <body>
