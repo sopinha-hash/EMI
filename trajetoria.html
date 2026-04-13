@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-  <style>
+<style>
 .btn-center {
   width: 100%;
   display: flex;
@@ -21,33 +21,81 @@
   width: auto;
 }
 
-    /* Ajustes nas imagens */
-    .foto {
-      max-width: 100%;
-      height: auto;
-    }
+  /* Ajustes nas imagens */
+  .foto {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+  }
 
+  .section {
+    padding: 50px 0;
+    background-color: #1e2a38;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+  }
+
+  .traj {
+    margin-bottom: 30px;
+  }
+
+  .frase {
+    color: white;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    line-height: 1.6;
+    padding: 0 10px;
+  }
+
+  @media (max-width: 768px) {
     .section {
-      padding: 50px 0;
-      background-color: #1e2a38;
+      padding: 35px 15px;
     }
 
     .section-title {
-      font-size: 2.5rem;
-      font-weight: bold;
-      color: white;
+      font-size: 1.8rem;
     }
 
-    .traj {
-      margin-bottom: 30px;
+    .foto {
+      height: 220px;
     }
 
     .frase {
-      color: white;
-      font-size: 1.1rem;
-      margin-top: 20px;
+      font-size: 1rem;
+      margin-top: 15px;
+      padding: 0 5px;
     }
-  </style>
+
+    .btn-center {
+      margin-top: 30px;
+    }
+
+    .btn-center .btn,
+    .btn-center .btn-primary {
+      width: 100%;
+      max-width: 220px;
+      text-align: center;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .section-title {
+      font-size: 1.5rem;
+    }
+
+    .foto {
+      height: 200px;
+    }
+
+    .frase {
+      font-size: 0.95rem;
+    }
+  }
+</style>
 </head>
 <body>
   <section id="trajetoria" class="section dark-section">
